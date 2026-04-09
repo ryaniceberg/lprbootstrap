@@ -1,0 +1,318 @@
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+
+
+body {
+	font-family: Georgia, serif;
+	background-color: #f0f4f8;
+	color: #333;
+	line-height: 1.7;
+}
+
+
+header {
+	background-image: url("../img/lappeenranta.jpg");
+	background-size: cover;
+	background-position: center;
+	padding: 20px 30px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	min-height: 100px;
+}
+
+header h1 {
+	color: white;
+	font-size: 1.6em;
+	text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
+	margin: 0;
+}
+
+
+
+nav {
+	display: flex;
+	gap: 6px;
+	flex-wrap: wrap; 
+}
+
+nav a {
+	color: white;
+	text-decoration: none;
+	padding: 8px 14px;
+	background-color: rgba(0,0,0,0.45);
+	border-radius: 4px;
+	font-size: 0.95em;
+	transition: background-color 0.2s;
+}
+
+nav a:hover {
+	background-color: rgba(0,0,0,0.7);
+}
+
+
+main {
+	max-width: 900px;
+	margin: 30px auto;
+	padding: 0 20px;
+}
+
+main > h2 {
+	text-align: center;
+	color: #1a3a5c;
+	margin-bottom: 20px;
+	font-size: 1.4em;
+}
+
+section {
+	background-color: #ffffff;
+	border-radius: 6px;
+	padding: 24px;
+	margin-bottom: 24px;
+	box-shadow: 1px 1px 6px rgba(0,0,0,0.08);
+}
+
+
+section img,
+.box img,
+img {
+	display: block;
+	margin: 0 auto 16px auto;
+	max-width: 100%;
+	height: auto;
+	border-radius: 6px;
+	box-shadow: 2px 2px 8px rgba(0,0,0,0.12);
+}
+
+h2 {
+	color: #1a3a5c;
+	border-left: 5px solid #2e6da4;
+	padding-left: 10px;
+	margin-bottom: 14px;
+	font-size: 1.3em;
+}
+
+p {
+	margin-bottom: 12px;
+}
+
+ul {
+	padding-left: 20px;
+	line-height: 2;
+}
+
+mark {
+	background-color: #ffd966;
+	padding: 0 3px;
+	border-radius: 3px;
+}
+
+audio {
+	display: block;
+	width: 100%;
+	margin-top: 10px;
+}
+
+a {
+	color: #2e6da4;
+}
+
+a:hover {
+	color: #1a3a5c;
+}
+
+
+.boxes {
+	display: flex;
+	gap: 16px;
+	margin-bottom: 24px;
+}
+
+.box {
+	flex: 1;
+	background-color: #c8dff0;
+	border-radius: 6px;
+	padding: 16px;
+	text-align: center;
+	box-shadow: 1px 1px 5px rgba(0,0,0,0.08);
+}
+
+.box a {
+	text-decoration: none;
+	color: #1a3a5c;
+	font-weight: bold;
+	font-size: 0.9em;
+}
+
+.box p {
+	margin: 0;
+}
+
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+	margin-top: 10px;
+	font-size: 0.88em;
+	display: block;
+	overflow-x: auto;
+}
+
+td, th {
+	border: 1px solid #c0cfe0;
+	padding: 6px 10px;
+	white-space: nowrap;
+}
+
+.sininen {
+	background-color: #b8d4ee;
+}
+
+.keltainen {
+	background-color: #fffbe6;
+}
+
+
+form {
+	background-color: #f9fbfd;
+	padding: 20px;
+	border: 1px solid #c0cfe0;
+	border-radius: 6px;
+	max-width: 500px;
+}
+
+label {
+	font-weight: bold;
+	font-size: 0.95em;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+	width: 100%;
+	padding: 7px;
+	margin-top: 4px;
+	border: 1px solid #aabbcc;
+	border-radius: 4px;
+	font-size: 0.95em;
+	background-color: #ffffff;
+}
+
+input[type="submit"] {
+	background-color: #1a3a5c;
+	color: white;
+	padding: 8px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 0.95em;
+}
+
+input[type="submit"]:hover {
+	background-color: #2e6da4;
+}
+
+input[type="reset"] {
+	padding: 8px 20px;
+	border-radius: 4px;
+	border: 1px solid #aabbcc;
+	cursor: pointer;
+	font-size: 0.95em;
+	background-color: #f0f4f8;
+	margin-left: 8px;
+}
+
+input[type="reset"]:hover {
+	background-color: #dce6f0;
+}
+
+
+footer {
+	background-color: #222;
+	color: #ccc;
+	text-align: center;
+	padding: 16px;
+	font-size: 0.9em;
+}
+
+footer a {
+	color: #a0c8ee;
+}
+
+
+@media (max-width: 768px) {
+	header {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 12px;
+		padding: 16px 20px;
+	}
+
+	nav {
+		flex-wrap: wrap;
+		gap: 4px;
+	}
+
+	nav a {
+		padding: 7px 10px;
+		font-size: 0.9em;
+	}
+
+	.boxes {
+		flex-direction: column;
+	}
+
+	form {
+		max-width: 100%;
+	}
+}
+
+@media (max-width: 600px) {
+	nav {
+		flex-direction: column; 
+	}
+	nav a {
+		width: 100%;           
+		text-align: center;   
+		box-sizing: border-box;
+	}
+}
+
+@media (max-width: 480px) {
+	header h1 {
+		font-size: 1.2em;
+	}
+
+	nav a {
+		padding: 6px 8px;
+		font-size: 0.85em;
+	}
+
+	main {
+		padding: 0 10px;
+		margin: 14px auto;
+	}
+
+	section {
+		padding: 14px;
+	}
+
+	h2 {
+		font-size: 1.1em;
+	}
+
+	table {
+		font-size: 0.72em;
+	}
+
+	td, th {
+		padding: 4px 6px;
+	}
+}

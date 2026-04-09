@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lappeenranta – Historia</title>
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Sans+3:wght@400;600&display=swap');
+
+    :root { --lpr-blue:#1a3a5c; --lpr-mid:#2e6da4; --lpr-light:#c8dff0; --lpr-bg:#f0f4f8; }
+    body { font-family:'Source Sans 3',sans-serif; background:var(--lpr-bg); color:#333; }
+
+    .site-hero {
+      background: linear-gradient(135deg,rgba(26,58,92,.82) 0%,rgba(46,109,164,.65) 100%),
+                  url('img/lappeenranta.jpg') center/cover no-repeat;
+      min-height:220px; display:flex; flex-direction:column; justify-content:center; padding:2rem 2.5rem 1.5rem;
+    }
+    .site-hero h1 { font-family:'Playfair Display',serif; color:#fff; text-shadow:1px 2px 8px rgba(0,0,0,.6); letter-spacing:.04em; }
+    .site-nav .nav-link { color:rgba(255,255,255,.9); font-weight:600; padding:.35rem .9rem; border-radius:4px; transition:background .2s; }
+    .site-nav .nav-link:hover,.site-nav .nav-link.active { background:rgba(255,255,255,.22); color:#fff; }
+
+    .content-card { background:#fff; border-radius:10px; box-shadow:0 2px 10px rgba(0,0,0,.07); padding:2rem; margin-bottom:1.8rem; }
+    h2.section-title { font-family:'Playfair Display',serif; color:var(--lpr-blue); border-left:5px solid var(--lpr-mid); padding-left:.75rem; margin-bottom:1.2rem; font-size:1.5rem; }
+
+    .timeline-dot { width:14px; height:14px; border-radius:50%; background:var(--lpr-mid); display:inline-block; margin-right:.5rem; vertical-align:middle; flex-shrink:0; margin-top:.35rem; }
+    .timeline-item { display:flex; gap:.75rem; margin-bottom:1.2rem; }
+    .timeline-item .year { font-weight:700; color:var(--lpr-mid); min-width:58px; font-size:.95rem; padding-top:.02rem; }
+
+    .link-card { background:var(--lpr-light); border-radius:8px; padding:1.2rem; text-align:center; transition:transform .2s,box-shadow .2s; }
+    .link-card:hover { transform:translateY(-4px); box-shadow:0 6px 18px rgba(46,109,164,.25); }
+    .link-card a { text-decoration:none; color:var(--lpr-blue); font-weight:700; font-size:.9rem; }
+    .link-card img { border-radius:6px; margin-bottom:.7rem; max-width:100%; }
+
+    footer { background:#1a1a2e; color:#bbb; text-align:center; padding:1.2rem; font-size:.88rem; }
+  </style>
+</head>
+<body>
+
+<header class="site-hero">
+  <h1 class="mb-3"><i class="bi bi-geo-alt-fill me-2"></i>Lappeenranta</h1>
+  <nav class="site-nav">
+    <ul class="nav flex-wrap gap-1">
+      <li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-house-fill me-1"></i>Etusivu</a></li>
+      <li class="nav-item"><a class="nav-link active" href="historia.html"><i class="bi bi-clock-history me-1"></i>Historia</a></li>
+      <li class="nav-item"><a class="nav-link" href="matkailu.html"><i class="bi bi-map me-1"></i>Matkailu</a></li>
+      <li class="nav-item"><a class="nav-link" href="talousarvio.html"><i class="bi bi-bar-chart-fill me-1"></i>Talousarvio</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="container" style="max-width:900px; margin-top:2rem;">
+
+  <h2 class="section-title"><i class="bi bi-clock-history me-2"></i>Historia</h2>
+
+  <!-- Intro section -->
+  <div class="content-card">
+    <div class="row g-4 align-items-start">
+      <div class="col-md-5">
+        <img src="img/historia.jpg" alt="Lappeenrannan historia" class="img-fluid rounded shadow" width="800" height="600" loading="lazy">
+    </div>
+      <div class="col-md-7">
+        <p>
+          <strong>Lappeenranta</strong> on maailman ainoa lappeellaan oleva ranta. Vielä ennen Pähkinäsaaren rauhaa
+          se oli tavallinen ranta, jolla ei ollut nimeä. Paikalliset alkuasukkaat päättivät antaa sille nimen
+          <strong>Lappeenranta</strong>. Ainoa ongelma oli, ettei se ollut vielä lappeellaan ja jotta se toteuttaisi
+          nimensä mukaista lappeuden ideaa, se oli väännettävä lappeelleen.
+        </p>
+        <p>
+          Niinpä paikallinen kyläneuvosto päätti äänin 1-0.5 kammeta rannan lappeelleen. Hieman myöhemmin
+          Ruotsin kuningatar Kristiina Brask antoi Lappeenrannalle kaupunkioikeudet pitkin hampain vuonna
+          <strong>1649</strong>, koska hänen salarakkaansa, Englannin, Skotlannin ja Irlannin kuningas Kaarle I
+          mestattiin tylysti.
+        </p>
+        <p>
+          <strong>Lappeenranta</strong> sai alkunsa nykyisen linnoituksen alueelta. Rakennuksille varattu tila
+          loppui hyvin äkkiä, joten Lappeenrantaa päätettiin laajentaa Saimaaseen, jossa olikin hyvää tilaa.
+          <em>"Hattujen sodassa" 1700-luvulla</em> (joka alkoi pukeutumisesta johtuvista erimielisyyksistä),
+          <strong>Lappeenranta</strong> ei kärsinyt mittavia tappioita, koska sinä aikana suurin osa kaupungista
+          sijaitsi Saimaassa.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Timeline -->
+  <div class="content-card">
+    <h2 class="section-title"><i class="bi bi-list-ol me-2"></i>Aikajana</h2>
+    <div class="timeline-item">
+      <span class="year">1649</span>
+      <span class="timeline-dot"></span>
+      <span>Kuningatar Kristiina Brask myönsi kaupunkioikeudet.</span>
+    </div>
+    <div class="timeline-item">
+      <span class="year">1700-l.</span>
+      <span class="timeline-dot"></span>
+      <span><em>Hattujen sota</em> – suurin osa kaupungista turvassa Saimaassa.</span>
+    </div>
+    <div class="timeline-item">
+      <span class="year">1800-l.</span>
+      <span class="timeline-dot"></span>
+      <span>Kaukaan Tehdas Oy perustettu; paperia ja sulfiittiselluloosaa.</span>
+    </div>
+    <div class="timeline-item">
+      <span class="year">1900-l.</span>
+      <span class="timeline-dot"></span>
+      <span>Fuusio Chymoksen kanssa → Oy Kaukas Ab aloittaa viinantuotannon.</span>
+    </div>
+    <div class="timeline-item">
+      <span class="year">2009</span>
+      <span class="timeline-dot"></span>
+      <span>Lappeenranta onnistuu Joutsenon vallankaappauksessa.</span>
+    </div>
+  </div>
+
+  <!-- Teollistuminen -->
+  <div class="content-card">
+    <h2 class="section-title"><i class="bi bi-gear-fill me-2"></i>Lappeenrannan teollistuminen</h2>
+    <p>
+      1800-luvulla ymmärrettiin Saimaan merkitys teollisuudessa ja Lappeenrantaan perustettiin
+      metsäteollisuusyhtiö, Kaukaan Tehdas Oy. Alun perin tehdas tuotti paperia ja sulfiittiselluloossaa
+      teollisuuden tarpeisiin, mutta tuotannon ajautuessa kriisiin taloudellisten vaikeuksien takia
+      1900-luvun alkupuolella, se fuusioitui Lappeenrantalaisen makeisia valmistaneen Chymoksen kanssa
+      ja aloitti viinan tuotannon nykyisen Kaukaan tehtaan paikalla.
+    </p>
+    <p>
+      Chymoksen tehdas ja toimitilat myytiin alankomaalaiselle Leafille. Uuden alkoholia valmistavan yhtiön
+      nimeksi tuli <strong>Oy Kaukas Ab</strong>, joka toimii edelleen. Yhtiön erikoisuutena on vanerista
+      valmistetut alkoholipakkaukset ja suosituin tuote on sahatukkiin piiloitettu väkevää viinaa sisältävä
+      alkoholipullo, <em>"Salakuljettajan Erikoinen"</em>. Pitkän historian omaavan viinatehtaan vuoksi
+      alkoholisoituneita henkilöitä on ruvettu kutsumaan nykykielessä <em>"Lappeen rantojen miehiksi"</em>.
+    </p>
+  </div>
+
+  <!-- Nykyisin -->
+  <div class="content-card">
+    <h2 class="section-title"><i class="bi bi-buildings me-2"></i>Lappeenranta nykyisin</h2>
+    <p>
+      <strong>Lappeenranta</strong> jakautuu kolmeen suurempaan keskukseen: linnoitukseen, Saimaaseen ja
+      Kaukaan tehtaaseen. Pienempiä keskuksia ovat Saimaa (pohjoinen), Saimaa (eteläinen),
+      Nordkalkin kalkkilouhos ja Saimaa (itäinen) sekä Nuijamaa, josta puolet on asfaltoitu rekkojen
+      parkkipaikoiksi.
+    </p>
+    <p>
+      Pieniin keskuksiin voidaan laskea myös
+      <mark class="px-1 rounded" style="background:#ffd966;">Lidl, Citymarket, Prisma ja molemmat Euromarketit</mark>,
+      joissa suomalaiset käyvät mielellään ostoksilla. Lappeenrannan suurimpiin työnantajiin kuuluvat
+      Oy Kaukaan tehdas Ab, Mediapex ja Lappeenrannan Työvoimatoimisto.
+    </p>
+    <div class="alert alert-info mt-3 py-2" role="alert">
+      <i class="bi bi-chat-quote-fill me-2"></i>
+      Paikallislehti Etelä-Saimaan päätoimittaja Pekka Lakan mukaan Lappeenranta on
+      <strong>"Suomen innovatiivisin kaupunki"</strong>.
+    </div>
+  </div>
+
+  <!-- Rakuunat -->
+  <div class="content-card">
+    <h2 class="section-title"><i class="bi bi-flower2 me-2"></i>Lappeenrannan rakuunat</h2>
+    <p>
+      Lappeenrannan Rakuunat on yhtiö joka tuottaa rakuuna-nimistä kasvia mausteeksi. Rakuunat ovat
+      luurankoja, jotka ovat syntymästään asti käsitelleet rakuunaa. Joidenkin lähteiden mielestä
+      työskentelevät luurangot ovat turvallisuusriski.
+    </p>
+    <p>
+      Lappeenrannan Rakuunoilla on oma tarkoin vartioitu teollisuusalue Rakuunamäellä, joka on saanut
+      nimensä kyseisestä mausteesta. Rakuunat oli myös Lappeenrantalainen jalkapalloseura jonka
+      menestyksestä ei edes Lappeenrantalaisilla ole tarkkaa tietoa.
+    </p>
+  </div>
+
+  <!-- Link card -->
+  <div class="row g-3 mb-4">
+    <div class="col-sm-6 col-md-4">
+      <div class="link-card">
+        <a href="https://www.lappeenranta.fi/fi/kulttuuri-ja-liikunta/lappeenrannan-museot/museot/etela-karjalan-museo" target="_blank">
+          <img src="img/museo.jpg" alt="Etelä-Karjalan museo">
+          <p>Etelä-Karjalan museo</p>
+        </a>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer>&copy; 2026 Lappeenranta</footer>
+
+</body>
+</html>

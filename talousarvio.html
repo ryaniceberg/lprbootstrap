@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lappeenranta – Talousarvio</title>
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+ 
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Sans+3:wght@400;600&display=swap');
+
+    :root { --lpr-blue:#1a3a5c; --lpr-mid:#2e6da4; --lpr-light:#c8dff0; --lpr-bg:#f0f4f8; }
+    body { font-family:'Source Sans 3',sans-serif; background:var(--lpr-bg); color:#333; }
+
+    .site-hero {
+      background: linear-gradient(135deg,rgba(26,58,92,.82) 0%,rgba(46,109,164,.65) 100%),
+                  url('img/lappeenranta.jpg') center/cover no-repeat;
+      min-height:220px; display:flex; flex-direction:column; justify-content:center; padding:2rem 2.5rem 1.5rem;
+    }
+    .site-hero h1 { font-family:'Playfair Display',serif; color:#fff; text-shadow:1px 2px 8px rgba(0,0,0,.6); letter-spacing:.04em; }
+    .site-nav .nav-link { color:rgba(255,255,255,.9); font-weight:600; padding:.35rem .9rem; border-radius:4px; transition:background .2s; }
+    .site-nav .nav-link:hover,.site-nav .nav-link.active { background:rgba(255,255,255,.22); color:#fff; }
+
+    .content-card { background:#fff; border-radius:10px; box-shadow:0 2px 10px rgba(0,0,0,.07); padding:2rem; margin-bottom:1.8rem; }
+    h2.section-title { font-family:'Playfair Display',serif; color:var(--lpr-blue); border-left:5px solid var(--lpr-mid); padding-left:.75rem; margin-bottom:1.2rem; font-size:1.5rem; }
+
+    /* Budget table */
+    .budget-table { font-size:.85em; }
+    .budget-table th { background-color:#1a3a5c; color:#fff; white-space:nowrap; }
+    .budget-table .row-sub td:first-child { padding-left:1.6rem; color:#555; font-size:.92em; background:#fffbe6; }
+    .budget-table .row-total td { background:#b8d4ee; font-weight:700; }
+    .budget-table td, .budget-table th { white-space:nowrap; }
+    .budget-table .neg { color:#c0392b; }
+    .budget-table .pos { color:#1a7a3c; }
+
+    /* Form styles */
+    .form-label { font-weight:600; font-size:.93rem; }
+    .btn-lpr { background:var(--lpr-blue); color:#fff; border:none; }
+    .btn-lpr:hover { background:var(--lpr-mid); color:#fff; }
+
+    footer { background:#1a1a2e; color:#bbb; text-align:center; padding:1.2rem; font-size:.88rem; }
+  </style>
+</head>
+<body>
+
+<header class="site-hero">
+  <h1 class="mb-3"><i class="bi bi-geo-alt-fill me-2"></i>Lappeenranta</h1>
+  <nav class="site-nav">
+    <ul class="nav flex-wrap gap-1">
+      <li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-house-fill me-1"></i>Etusivu</a></li>
+      <li class="nav-item"><a class="nav-link" href="historia.html"><i class="bi bi-clock-history me-1"></i>Historia</a></li>
+      <li class="nav-item"><a class="nav-link" href="matkailu.html"><i class="bi bi-map me-1"></i>Matkailu</a></li>
+      <li class="nav-item"><a class="nav-link active" href="talousarvio.html"><i class="bi bi-bar-chart-fill me-1"></i>Talousarvio</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="container" style="max-width:950px; margin-top:2rem;">
+
+  <h2 class="section-title"><i class="bi bi-bar-chart-line me-2"></i>Lappeenrannan talousarvio 2026</h2>
+
+  <!-- Budget table -->
+  <div class="content-card">
+    <p class="text-muted small mb-3">
+      <i class="bi bi-info-circle me-1"></i>
+      Taulukko on otettu talousarvio 2026 -dokumentin sivulta 33, Tuloslaskelmaosa. Luvut ovat tuhansina euroina.
+    </p>
+    <div class="table-responsive">
+      <table class="table table-bordered budget-table">
+        <thead>
+          <tr>
+            <th>1 000 €</th>
+            <th>TP 2024</th>
+            <th>KS 2025</th>
+            <th>TA 2026</th>
+            <th>TS 2027</th>
+            <th>TS 2028</th>
+            <th>TS 2029</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Toimintatuotot</strong></td><td class="pos">95 193</td><td class="pos">103 198</td><td class="pos">102 986</td><td class="pos">102 176</td><td class="pos">102 178</td><td class="pos">102 405</td></tr>
+          <tr class="row-sub"><td>Myyntituotot</td><td>27 642</td><td>42 343</td><td>41 391</td><td>40 421</td><td>40 390</td><td>40 570</td></tr>
+          <tr class="row-sub"><td>Maksutuotot</td><td>4 808</td><td>3 691</td><td>3 687</td><td>3 757</td><td>3 790</td><td>3 837</td></tr>
+          <tr class="row-sub"><td>Tuet ja avustukset</td><td>9 157</td><td>6 235</td><td>5 786</td><td>5 559</td><td>5 559</td><td>5 559</td></tr>
+          <tr class="row-sub"><td>Vuokratuotot</td><td>50 803</td><td>49 215</td><td>50 406</td><td>50 724</td><td>50 724</td><td>50 724</td></tr>
+          <tr class="row-sub"><td>Muut tuotot</td><td>2 785</td><td>1 714</td><td>1 715</td><td>1 715</td><td>1 715</td><td>1 715</td></tr>
+
+          <tr><td><strong>Toimintakulut</strong></td><td class="neg">-258 370</td><td class="neg">-298 443</td><td class="neg">-295 018</td><td class="neg">-297 942</td><td class="neg">-299 757</td><td class="neg">-302 403</td></tr>
+          <tr class="row-sub"><td>Henkilöstökulut</td><td>-106 134</td><td>-115 968</td><td>-118 801</td><td>-120 963</td><td>-121 580</td><td>-123 079</td></tr>
+          <tr class="row-sub"><td>Palvelujen ostot</td><td>-80 613</td><td>-103 376</td><td>-98 649</td><td>-98 742</td><td>-99 261</td><td>-99 808</td></tr>
+          <tr class="row-sub"><td>Aineet, tarvikkeet, tavarat</td><td>-13 192</td><td>-12 768</td><td>-12 695</td><td>-13 165</td><td>-13 639</td><td>-14 118</td></tr>
+          <tr class="row-sub"><td>Avustukset</td><td>-11 790</td><td>-20 362</td><td>-19 803</td><td>-19 389</td><td>-19 329</td><td>-19 329</td></tr>
+          <tr class="row-sub"><td>Vuokrakulut</td><td>-42 655</td><td>-42 734</td><td>-43 174</td><td>-43 818</td><td>-44 034</td><td>-44 205</td></tr>
+          <tr class="row-sub"><td>Muut kulut</td><td>-3 987</td><td>-3 235</td><td>-1 896</td><td>-1 865</td><td>-1 914</td><td>-1 865</td></tr>
+
+          <tr class="row-total"><td>TOIMINTAKATE</td><td class="neg">-163 177</td><td class="neg">-195 245</td><td class="neg">-192 032</td><td class="neg">-195 766</td><td class="neg">-197 579</td><td class="neg">-199 998</td></tr>
+
+          <tr><td>Verotulot</td><td class="pos">186 033</td><td class="pos">185 500</td><td class="pos">182 800</td><td class="pos">185 300</td><td class="pos">192 000</td><td class="pos">196 800</td></tr>
+          <tr><td>Valtionosuudet</td><td class="pos">22 948</td><td class="pos">30 000</td><td class="pos">28 000</td><td class="pos">29 900</td><td class="pos">33 800</td><td class="pos">32 700</td></tr>
+          <tr><td>Rahoitustuotot ja -kulut</td><td class="pos">11 003</td><td class="pos">5 000</td><td class="pos">5 000</td><td class="pos">4 500</td><td class="pos">2 600</td><td class="pos">2 000</td></tr>
+
+          <tr class="row-total"><td>VUOSIKATE</td><td class="pos">56 808</td><td class="pos">25 255</td><td class="pos">23 768</td><td class="pos">23 934</td><td class="pos">30 821</td><td class="pos">31 502</td></tr>
+
+          <tr><td>Poistot ja arvonalentumiset</td><td class="neg">-21 280</td><td class="neg">-20 500</td><td class="neg">-23 000</td><td class="neg">-24 500</td><td class="neg">-26 000</td><td class="neg">-27 000</td></tr>
+
+          <tr class="row-total"><td>TILIKAUDEN TULOS</td><td class="pos">35 528</td><td class="pos">4 755</td><td class="pos">768</td><td class="neg">-566</td><td class="pos">4 821</td><td class="pos">4 502</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Audio -->
+  <div class="content-card">
+    <h2 class="section-title"><i class="bi bi-music-note-beamed me-2"></i>Lappeenranta-humppa – Erkki Junkkarinen</h2>
+    <audio controls class="w-100 mt-2">
+      <source src="audio/erkki_junkkarinen_lappeenrantaan.mp3" type="audio/mp3">
+      Selaimesi ei tue audio-elementtiä.
+    </audio>
+  </div>
+
+  <!-- Feedback form -->
+  <div class="content-card">
+    <h2 class="section-title"><i class="bi bi-chat-left-text me-2"></i>Kirjaston palautekysely</h2>
+    <p>Anna palautetta Lappeenrannan kirjaston toiminnasta. Tähdellä (<span class="text-danger">*</span>) merkityt kentät ovat pakollisia.</p>
+
+    <form class="mt-3" style="max-width:520px;">
+
+      <div class="mb-3">
+        <label for="aihe" class="form-label">Palautteen aihe <span class="text-danger">*</span></label>
+        <select id="aihe" name="aihe" class="form-select" required>
+          <option value="">Valitse aihe</option>
+          <option value="kirjasto">Kirjasto</option>
+          <option value="lainaus">Lainaus</option>
+          <option value="tilat">Tilat</option>
+          <option value="henkilosto">Henkilöstö</option>
+          <option value="kokoelma">Kokoelma</option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label for="luonne" class="form-label">Palautteen luonne <span class="text-danger">*</span></label>
+        <select id="luonne" name="luonne" class="form-select" required>
+          <option value="">Valitse luonne</option>
+          <option value="kiitos">Kiitos</option>
+          <option value="moite">Moite</option>
+          <option value="kysymys">Kysymys</option>
+          <option value="ehdotus">Toimenpide-ehdotus</option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label for="palaute" class="form-label">Palauteteksti <span class="text-danger">*</span></label>
+        <textarea id="palaute" name="palaute" class="form-control" rows="5" placeholder="Kirjoita palautteesi tähän..." required></textarea>
+      </div>
+
+      <div class="mb-4 form-check">
+        <input type="checkbox" class="form-check-input" id="julkaisu" name="julkaisu">
+        <label class="form-check-label" for="julkaisu">Palautteen saa julkaista</label>
+      </div>
+
+      <h3 class="mb-3" style="color:var(--lpr-blue);"><i class="bi bi-person me-2"></i>Yhteystiedot</h3>
+
+      <div class="row g-3 mb-3">
+        <div class="col-sm-6">
+          <label for="etunimi" class="form-label">Etunimi</label>
+          <input type="text" id="etunimi" name="etunimi" class="form-control">
+        </div>
+        <div class="col-sm-6">
+          <label for="sukunimi" class="form-label">Sukunimi</label>
+          <input type="text" id="sukunimi" name="sukunimi" class="form-control">
+        </div>
+      </div>
+
+      <div class="row g-3 mb-3">
+        <div class="col-sm-6">
+          <label for="email" class="form-label">Sähköposti</label>
+          <input type="email" id="email" name="email" class="form-control">
+        </div>
+        <div class="col-sm-6">
+          <label for="puhelin" class="form-label">Puhelin</label>
+          <input type="tel" id="puhelin" name="puhelin" class="form-control">
+        </div>
+      </div>
+
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="yhteydenotto" name="yhteydenotto">
+        <label class="form-check-label" for="yhteydenotto">Pyydän yhteydenottoa</label>
+      </div>
+
+      <div class="mb-4 form-check">
+        <input type="checkbox" class="form-check-input" id="ehdot" name="ehdot" required>
+        <label class="form-check-label" for="ehdot">Hyväksyn palvelun käyttöehdot <span class="text-danger">*</span></label>
+      </div>
+
+      <div class="d-flex gap-2">
+        <button type="submit" class="btn btn-lpr"><i class="bi bi-send me-1"></i>Lähetä palaute</button>
+        <button type="reset"  class="btn btn-outline-secondary"><i class="bi bi-x-circle me-1"></i>Tyhjennä</button>
+      </div>
+
+    </form>
+  </div>
+
+</main>
+
+<footer>&copy; 2026 Lappeenranta</footer>
+
+</body>
+</html>
